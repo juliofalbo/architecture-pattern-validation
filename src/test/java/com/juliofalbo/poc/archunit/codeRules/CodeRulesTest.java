@@ -12,7 +12,7 @@ import static com.tngtech.archunit.library.GeneralCodingRules.*;
 
 @RunWith(ArchUnitRunner.class)
 @AnalyzeClasses(packages = "com.juliofalbo.poc.archunit")
-public class CodingRulesTest {
+public class CodeRulesTest {
 
     @ArchTest
     private void noAccessToStandardStreamsAsMethod(JavaClasses classes) {
