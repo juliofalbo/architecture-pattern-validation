@@ -8,7 +8,7 @@ To do this, I used an amazing library called [ArchUnit](https://github.com/TNG/A
 
 ___
 
-### Clean Code Patterns
+## Clean Code Patterns
 Today exists a couple of libraries that help us to do this, the most famous are SonarQuebe and SonarLint.
 But those libraries can't allows us to validade our code in tests, and it would be a problem if you follow Fail Fast Validation mindset.
 
@@ -26,7 +26,8 @@ ArchUnit just have default methods to validate those rules.
 
 Take a look at **CodeRulesTest** and see the magic!
 
-### Architecture Patterns
+
+## Architecture Patterns
 Think at a large project that any teams can create new features, how we can guarantee a pattern?
 
 For example, let's say that we have 4 rules for Resources.
