@@ -42,4 +42,8 @@ public class AppService {
         CustomBeanUtils.copyProperties(newApp, dBapp);
         return appRepository.save(dBapp).toResponseDTO();
     }
+
+    public AppResponseDTO findById(@NonNull String id) {
+        return appRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Any App with id {"+id+"} was found.")).toResponseDTO();
+    }
 }

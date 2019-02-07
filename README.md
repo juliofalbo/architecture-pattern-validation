@@ -25,3 +25,17 @@ Let's say that we have 3 rules to code design.
 ArchUnit just have default methods to validate those rules.
 
 Take a look at **CodeRulesTest** and see the magic!
+
+### Architecture Patterns
+Think at a large project that any teams can create new features, how we can guarantee a pattern?
+
+For example, let's say that we have 4 rules for Resources.
+
+* Only resources can use @RestController annotation.
+* All methods annotated with PostMapping should return a ResponseEntity.created()
+* All methods annotated with GetMapping should return a ResponseEntity.ok()
+* All methods annotated with DeleteMapping should return a ResponseEntity.noContent()
+
+With ArchUnit we can guarantee this rules!
+
+Take a look at **ResourceRules** and see the magic!
